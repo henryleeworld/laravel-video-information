@@ -1,4 +1,4 @@
-# Laravel 6 影片資訊
+# Laravel 7 影片資訊
 
 引入 chojnicki 的 video-platforms-parser 套件來擴增取得影片編號、長度、標籤等資訊並儲存至資料庫。
 
