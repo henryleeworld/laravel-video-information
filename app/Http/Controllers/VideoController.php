@@ -10,7 +10,7 @@ class VideoController extends Controller
 {
     public function store() 
     {
-		$info = VideoPlatformsParser::get('https://www.youtube.com/watch?v=S8nz1JqbT9M');
+		$info = VideoPlatformsParser::get('https://www.youtube.com/watch?v=2reMNwRaMhE');
         $video = Video::firstOrCreate([
             'publish_id' => $info['id'],
             'platform' => $info['platform'],

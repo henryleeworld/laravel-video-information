@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,4 +16,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('video/store/','VideoController@store');
+Route::get('/video/store/','VideoController@store');
