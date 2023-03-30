@@ -10,7 +10,7 @@ class VideoController extends Controller
 {
     public function store() 
     {
-		$info = VideoPlatformsParser::get('https://www.youtube.com/watch?v=XXWLxz4qesg');
+		$info = VideoPlatformsParser::get('https://www.youtube.com/watch?v=vcw7FD7e6qE');
         $video = Video::firstOrCreate([
             'publish_id' => $info['id'],
             'platform'   => $info['platform'],
@@ -18,6 +18,6 @@ class VideoController extends Controller
             'tags'       => json_encode($info['tags']),
             'duration'   => $info['duration']
         ]);
-        return redirect('/')->with('success', 'All good!');
+        dd($video);
     }
 }
