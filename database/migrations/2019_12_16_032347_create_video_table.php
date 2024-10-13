@@ -8,13 +8,11 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('video', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->string('publish_id');
             $table->string('platform');
             $table->string('thumbnail');
@@ -27,10 +25,8 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('video');
     }

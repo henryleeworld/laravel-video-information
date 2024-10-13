@@ -1,4 +1,4 @@
-# Laravel 10 影片資訊
+# Laravel 11 影片資訊
 
 引入 chojnicki 的 video-platforms-parser 套件來擴增取得影片編號、長度、標籤等資訊並儲存至資料庫。
 
@@ -26,5 +26,5 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/17WlbZE.png)
+![](https://i.imgur.com/ChmsahT.png)
 > 影片資訊包含影音的來源平台，也可以取得縮圖

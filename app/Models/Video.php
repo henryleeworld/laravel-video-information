@@ -16,7 +16,7 @@ class Video extends Model
     /**
      * The attributes that are mass assignable.
      *
-     * @var array
+     * @var array<int, string>
      */
     protected $fillable = ['publish_id', 'platform', 'thumbnail', 'tags', 'duration'];
 }
