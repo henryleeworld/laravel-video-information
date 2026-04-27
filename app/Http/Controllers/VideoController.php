@@ -8,9 +8,12 @@ use VideoPlatformsParser;
 
 class VideoController extends Controller
 {
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store() 
     {
-		$info = VideoPlatformsParser::get('https://www.youtube.com/watch?v=oifMmvP6VdA');
+		$info = VideoPlatformsParser::get('https://www.youtube.com/watch?v=19GkjFMJ-_g');
         $video = Video::firstOrCreate([
             'publish_id' => $info['id'],
             'platform'   => $info['platform'],
