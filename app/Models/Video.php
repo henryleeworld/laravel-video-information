@@ -2,21 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Attributes\Table;
 use Illuminate\Database\Eloquent\Model;
 
+#[Fillable(['publish_id', 'platform', 'thumbnail', 'tags', 'duration'])]
+#[Table('video')]
 class Video extends Model
 {
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'video';
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = ['publish_id', 'platform', 'thumbnail', 'tags', 'duration'];
 }
